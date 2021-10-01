@@ -33,6 +33,7 @@ namespace UserMaintenance
             this.lblFullName = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox1
@@ -44,11 +45,11 @@ namespace UserMaintenance
             this.listBox1.Size = new System.Drawing.Size(120, 212);
             this.listBox1.TabIndex = 0;
             // 
-            // lblLastName
+            // lblFullName
             // 
             this.lblFullName.AutoSize = true;
             this.lblFullName.Location = new System.Drawing.Point(164, 30);
-            this.lblFullName.Name = "lblLastName";
+            this.lblFullName.Name = "lblFullName";
             this.lblFullName.Size = new System.Drawing.Size(46, 17);
             this.lblFullName.TabIndex = 1;
             this.lblFullName.Text = "label1";
@@ -70,11 +71,22 @@ namespace UserMaintenance
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(217, 161);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(131, 40);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(438, 273);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblFullName);
@@ -92,6 +104,7 @@ namespace UserMaintenance
         private System.Windows.Forms.Label lblFullName;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button button1;
     }
 }
 
