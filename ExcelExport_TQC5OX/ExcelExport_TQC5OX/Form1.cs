@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Excel = Microsoft.Office.Interop.Excel;
+using System.Reflection;
 
 namespace ExcelExport_TQC5OX
 {
@@ -20,6 +22,7 @@ namespace ExcelExport_TQC5OX
             InitializeComponent();
             LoadData();
             dataGridView1.DataSource = lakasok;
+
         }
 
         public void LoadData()
