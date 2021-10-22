@@ -24,6 +24,8 @@ namespace VaR_TQC5OX
             dataGridView1.DataSource = Ticks;
 
             CreatePortfolio();
+
+
         }
 
         private void CreatePortfolio()
@@ -39,5 +41,22 @@ namespace VaR_TQC5OX
 
             dataGridView2.DataSource = Portfolios;
         }
+
+        private decimal GetPortfolioValue(DateTime date)
+        {
+            decimal value = 0;
+            foreach (var item in Portfolios)
+            {
+                var last = (from x in Ticks
+                            where item.Index == x.Index.Trim()
+                               && date <= x.TradingDay
+                               orderby x.TradingDay
+                            select x)
+                            .First();
+                value += (decimal)last.Price * item.Volume;
+            }
+            return value;
+        }
+
     }
 }
