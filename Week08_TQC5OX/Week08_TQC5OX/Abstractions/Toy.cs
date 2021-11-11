@@ -29,5 +29,6 @@ namespace Week08_TQC5OX.Abstractions
         {
             Left += 1;
         }
+
     }
 }
