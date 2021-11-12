@@ -8,7 +8,7 @@ using Week08_TQC5OX.Abstractions;
 
 namespace Week08_TQC5OX.Entities
 {
-    public class Car : Toy
+    public class Car : Abstractions.Toy
     {
         protected override void DrawImage(Graphics g)
         {

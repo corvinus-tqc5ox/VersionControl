@@ -7,9 +7,9 @@ using Week08_TQC5OX.Abstractions;
 
 namespace Week08_TQC5OX.Entities
 {
-   public class CarFactory : IToyFactory
+   public class CarFactory : Abstractions.IToyFactory
     {
-        public Toy CreateNew()
+        public Abstractions.Toy CreateNew()
         {
             return new Car();
         }

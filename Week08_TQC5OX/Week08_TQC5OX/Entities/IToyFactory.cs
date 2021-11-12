@@ -1,20 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 using Week08_TQC5OX.Abstractions;
 
 namespace Week08_TQC5OX.Entities
 {
-    public class Ball : Toy
+    public class IToyFactory : Abstractions.IToyFactory
     {
-        protected override void DrawImage(Graphics g)
+        public Abstractions.Toy CreateNew()
         {
-            g.FillEllipse(new SolidBrush(Color.Blue), 0, 0, Width, Height);
+            return new Toy();
         }
-
     }
 }
