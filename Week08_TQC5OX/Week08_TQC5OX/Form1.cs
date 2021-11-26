@@ -64,10 +64,10 @@ namespace Week08_TQC5OX
 
         private void createTimer_Tick(object sender, EventArgs e)
         {
-            var toy = Factory.CreateNew();
-            _toys.Add(toy);
-            toy.Left = -toy.Width;
-            mainPanel.Controls.Add(toy);
+            var Toy = Factory.CreateNew();
+            _toys.Add(Toy);
+            Toy.Left = -Toy.Width;
+            mainPanel.Controls.Add(Toy);
         }
 
         private void btnSelectBall_Click(object sender, EventArgs e)
